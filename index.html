@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play With me</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="notice">
+      <div class="notice_content">
+        <p>Rock <i class="fa-regular fa-hand-back-fist"></i></p>
+        <p>Scissors <i class="fa-regular fa-hand-scissors"></i></p>
+        <p>Paper <i class="fa-regular fa-hand"></i></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="player">
+        <h2>You</h2>
+        <br />
+
+        <h2 id="p_score" class="score">
+          Score : <span class="point pointP">0</span>
+        </h2>
+        <img
+          src="./img/4.png"
+          class="for_player mark"
+          width="90"
+          height="auto"
+          alt="question_mark"
+        />
+        <p class="content1"></p>
+      </div>
+      <div class="vs">
+        <h1 class="roundTime"></h1>
+
+        <img src="./img/vs.png" width="150" height="100" alt="Vs" />
+      </div>
+
+      <div class="computer">
+        <h2>computer</h2>
+        <br />
+
+        <h2 id="c_score" class="score">
+          Score : <span class="point pointC">0</span>
+        </h2>
+        <img
+          src="./img/4.png"
+          class="for_computer mark"
+          width="90"
+          height="auto"
+          alt="question_mark"
+        />
+        <p class="content2"></p>
+      </div>
+      <div class="start">
+        <ul onclick="audio.play()">
+          <div class="rock_div btn">
+            <li class="rock option">
+              Rock <i class="fa-regular fa-hand-back-fist"></i>
+            </li>
+          </div>
+          <div class="scissors_div btn">
+            <li class="scissors option">
+              Scis
+              <i class="fa-regular fa-hand-scissors"></i>
+            </li>
+          </div>
+          <div class="paper_div btn">
+            <li class="paper option">
+              Paper <i class="fa-regular fa-hand"></i>
+            </li>
+          </div>
+        </ul>
+        <button type="button" class="start_btn" onclick="audio.play()">
+          <i class="fa-solid fa-power-off power"></i>
+        </button>
+      </div>
+      <div class="aduio">
+        <audio autoplay loop>
+          <source src="./audio/backgroundsound.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
